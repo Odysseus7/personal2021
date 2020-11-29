@@ -1,0 +1,24 @@
+{
+  "name": "personal2021",
+  "version": "1.0.0",
+  "description": "Personal website of Chalita Ndunu",
+  "main": "index.js",
+  "scripts": {
+    "compileSass": "sass ./src/sass/style.scss ./src/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Odysseus7/personal2021.git"
+  },
+  "keywords": [
+    "Webdesigner",
+    "webdeveloper",
+    "Computer Science student"
+  ],
+  "author": "Chalita Ndunu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Odysseus7/personal2021/issues"
+  },
+  "homepage": "https://github.com/Odysseus7/personal2021#readme"
+}
