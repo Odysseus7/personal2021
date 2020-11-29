@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Odysseus7/personal2021/issues"
   },
-  "homepage": "https://github.com/Odysseus7/personal2021#readme"
+  "homepage": "https://github.com/Odysseus7/personal2021#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1"
+  }
 }
