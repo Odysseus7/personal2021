@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+div.waves {
+  width: 100%;
+  bottom: 0;
+  z-index: 99;
+  overflow: hidden;
+
+  .wave {
+    width: 100%;
+    display: block;
+  }
+
+  margin-bottom: 2rem;
+}
+
+#about {
+  display: flex;
+  height: 80vh;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  .profile {
+    &_pic {
+      height: 17rem;
+    }
+  }
+
+  .about {
+    &_text {
+      .heading-primary {
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: #444444;
+        padding: 1rem 0;
+        // margin-bottom: 2rem;
+      }
+
+      & > p {
+        padding: 0 3.5rem;
+        color: #444444;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #444444;
+  }
+
+  .arrow {
+    padding: 1rem 0;
+    font-size: 2rem;
+  }
+}

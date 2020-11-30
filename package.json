@@ -4,7 +4,7 @@
   "description": "Personal website of Chalita Ndunu",
   "main": "index.js",
   "scripts": {
-    "compileSass": "sass ./src/sass/style.scss ./src/css/style.css -w"
+    "compileSass": "sass ./src/sass/style.scss ./src/css/style.css --watch"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Odysseus7/personal2021#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.1"
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "sass": "^1.29.0"
   }
 }
