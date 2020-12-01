@@ -1,6 +1,11 @@
-body {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+}
+
+body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
@@ -20,7 +25,7 @@ div.waves .wave {
 #about {
   display: flex;
   height: 80vh;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -55,19 +60,46 @@ a {
   font-size: 2rem;
 }
 
+#links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+}
+
+.heading-secondary {
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: space-around;
+}
 .icons_linkedin {
-  height: 8rem;
+  height: 11rem;
 }
 .icons_github {
   height: 6rem;
 }
 .icons_email {
   font-size: 6rem;
+  font-weight: 700;
+  background: -webkit-linear-gradient(308deg, #8e2de2, #4a00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-#links {
-  margin-top: 2rem;
-  height: 100vh;
+.footer {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 @media only screen and (max-width: 374px) {
@@ -89,10 +121,28 @@ a {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+
+  .heading-secondary {
+    font-size: 1.2rem;
+  }
+
+  .icons_linkedin {
+    height: 8rem;
+  }
+  .icons_github {
+    height: 5rem;
+  }
+  .icons_email {
+    font-size: 5rem;
+  }
+
+  .footer {
+    font-size: 0.6rem;
+  }
 }
 @media only screen and (min-width: 375px) {
   #about {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
 
   .about_text > p {
