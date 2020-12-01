@@ -28,39 +28,91 @@ div.waves {
   align-items: center;
 
   text-align: center;
+}
 
-  .profile {
-    &_pic {
-      height: 17rem;
-    }
+.profile {
+  &_pic {
+    height: 17rem;
+  }
+}
+
+.heading-primary {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #444444;
+  padding: 1rem 0;
+  // margin-bottom: 2rem;
+}
+
+.about_text > p {
+  padding: 0 3.5rem;
+  color: #444444;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #444444;
+}
+
+.arrow {
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+.icons {
+  &_linkedin {
+    height: 8rem;
   }
 
-  .about {
-    &_text {
-      .heading-primary {
-        font-size: 1.7rem;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        color: #444444;
-        padding: 1rem 0;
-        // margin-bottom: 2rem;
-      }
-
-      & > p {
-        padding: 0 3.5rem;
-        color: #444444;
-        margin-bottom: 1.5rem;
-      }
-    }
+  &_github {
+    height: 6rem;
   }
 
-  a {
-    text-decoration: none;
-    color: #444444;
+  &_email {
+    font-size: 6rem;
+  }
+}
+
+// second part
+#links {
+  margin-top: 2rem;
+  height: 100vh;
+}
+
+// Media queries
+@media only screen and (max-width: 374px) {
+  #about {
+    margin-bottom: 10rem;
   }
 
-  .arrow {
-    padding: 1rem 0;
-    font-size: 2rem;
+  .profile_pic {
+    height: 12rem;
+    margin-top: 3rem;
   }
+
+  .heading-primary {
+    font-size: 1.5rem;
+  }
+
+  .about_text > p {
+    font-size: 0.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  #about {
+    margin-bottom: 10rem;
+  }
+
+  .about_text > p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
 }
