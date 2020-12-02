@@ -1,3 +1,5 @@
+@import "./animations.scss";
+
 @media only screen and (min-width: 992px) {
   body div.waves {
     margin-bottom: 0;
@@ -18,6 +20,10 @@
     flex-direction: column;
   }
 
+  .container #about {
+    margin-top: -2rem;
+  }
+
   .profile {
     display: flex;
     width: 100%;
@@ -30,13 +36,14 @@
   }
 
   .about_text {
-    width: 65%;
+    width: 45%;
     // padding: 0 20rem;
   }
 
-  //   #about .arrow {
-  //     display: none;
-  //   }
+  #about .arrow {
+    margin-top: 1rem;
+    padding: 0 0 2rem 0;
+  }
 
   #links .heading-secondary {
     margin-bottom: 5rem;
@@ -48,9 +55,17 @@
     align-items: center;
     height: 100vh;
 
+    &_icon {
+      &:hover {
+        cursor: pointer;
+        transform: translateY(-50px);
+      }
+
+      transition: all 2s;
+    }
+
     &_github {
-        margin-left: -2rem;
+      margin-left: -2rem;
     }
   }
-
 }
