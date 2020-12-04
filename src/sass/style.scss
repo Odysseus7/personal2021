@@ -17,13 +17,12 @@ div.waves {
   bottom: 0;
   z-index: 99;
   overflow: hidden;
+  margin-bottom: 1rem;
 
   .wave {
     width: 100%;
     display: block;
   }
-
-  margin-bottom: 2rem;
 }
 
 #about {
@@ -110,7 +109,7 @@ a {
 // footer
 .footer {
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 600;
@@ -124,8 +123,7 @@ a {
   }
 
   .profile_pic {
-    height: 12rem;
-    margin-top: 3rem;
+    height: 10rem;
   }
 
   .heading-primary {
@@ -135,7 +133,11 @@ a {
   .about_text > p {
     font-size: 0.8rem;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    // padding-bottom: 0.5rem;
+  }
+
+  #about > .arrow {
+    font-size: 1.5rem;
   }
 
   // links
@@ -162,6 +164,15 @@ a {
   }
 }
 
+@media only screen and (min-width: 375px) and (max-height: 740px) {
+  .profile {
+    &_pic {
+      height: 12rem;
+    }
+    margin-bottom: 1rem;
+  }
+}
+
 @media only screen and (min-width: 375px) {
   #about {
     margin-bottom: 5rem;
@@ -171,7 +182,21 @@ a {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+
+  .arrow {
+    padding: 0.5rem 0;
+  }
 }
 
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 767px) {
+  #about .about_text {
+    & > p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .arrow {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
 }
